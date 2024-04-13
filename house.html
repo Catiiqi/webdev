@@ -3,30 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dream House</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .container {
+            max-width: 600px;
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button + .button {
+            margin-left: 20px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+        footer
+        {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+    
+            width: 100%;
+            background-color: #45a049;
+            color: white;
+            text-align: right;        
+
+        }
+        .Parg
+        {
+            margin: 20px;
+        }
+        a:link
+        {
+            text-decoration: none;
+            color: #fff;
+            text-align: left;
+            padding: 12px 10px;
+        }
+.house
+{
+    padding: 6px 12px;
+    text-align: left;
+    border-radius: 40%;
+
+}
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="house.html">House</a></li>
-                <li><a href="interior.html">Interior</a></li>
-                <li><a href="exterior.html">Exterior</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Welcome to My Dream House</h1>
-        <p>This is the homepage of my dream house. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum turpis in sapien tristique, ut eleifend velit lacinia.</p>
-        <p><a href="interior.html">Explore the Interior</a></p>
-        <p><a href="exterior.html">Explore the Exterior</a></p>
-    </main>
-
+    <div class="container">
+        <h1>Welcome to My Drean House</h1>
+        <h2>Lab 2</h2>
+        <div class="button-container">
+            <a href="interior.html" target="_blank" class="button"> <img src="int1.jpg" alt="" width="100" class="house">interior Look</a>
+            <a href="exterior.html" target="_blank" class="button"><img src="ext1.jpg" alt="" width="100" class="house">exterior Look</a>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2024 My Dream House</p>
+        <div class="Parg">
+        <p>Author: Fahad<br>
+            <a href="mailto:ai220350@student.uthm.edu.my">bi220050@student.uthm.edu.my</a></p>
+        </div>
     </footer>
 </body>
 </html>
